@@ -1,0 +1,26 @@
+name: 新模块建议
+description: 提议加入新的功能模块
+title: "[新模块] "
+labels: [enhancement, module-request]
+body:
+  - type: markdown
+    attributes:
+      value: "感谢反馈。这里是公开 Issue，请勿填写密码、Token 或私人内容。"
+  - type: input
+    id: name
+    attributes:
+      label: 模块名称
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 希望解决的问题与使用场景
+    validations:
+      required: true
+  - type: textarea
+    id: features
+    attributes:
+      label: 首批功能与参考产品
+    validations:
+      required: true

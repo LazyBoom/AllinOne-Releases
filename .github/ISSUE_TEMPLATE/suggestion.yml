@@ -1,0 +1,26 @@
+name: 功能建议
+description: 完善已有模块或整体体验
+title: "[建议] "
+labels: [enhancement, feedback]
+body:
+  - type: markdown
+    attributes:
+      value: "感谢反馈。这里是公开 Issue，请勿填写密码、Token 或私人内容。"
+  - type: input
+    id: module
+    attributes:
+      label: 相关模块
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: 使用场景与现有不便
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议与预期效果
+    validations:
+      required: true

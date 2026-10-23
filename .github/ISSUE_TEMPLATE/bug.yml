@@ -1,0 +1,34 @@
+name: 问题反馈
+description: 报告已有功能中的错误
+title: "[问题] "
+labels: [bug, feedback]
+body:
+  - type: markdown
+    attributes:
+      value: "感谢反馈。这里是公开 Issue，请勿填写密码、Token 或私人内容。"
+  - type: input
+    id: module
+    attributes:
+      label: 相关模块
+      placeholder: 窗口管理、剪贴板、截图、文件暂存或整体体验
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 应用与系统版本
+      placeholder: AllinOne 版本 / macOS 版本 / Apple Silicon 或 Intel
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 现象与复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
